@@ -43,7 +43,7 @@ a {
     position: fixed;
     left: 0;
     top: 0;
-    z-index: 10;
+    z-index: 15;
   }
   header h2 {
     width: 60px;
@@ -59,7 +59,7 @@ a {
   header li:hover {
     transform: rotate(-30deg);
   }
-  header i {
+  header .fa-bars {
     display: none;
   }
 
@@ -341,9 +341,11 @@ a {
 
   #con02 .swiper-button-next {
     color: #6a6760;
+    z-index: 9;
   }
   #con02 .swiper-button-prev {
     color: #6a6760;
+    z-index: 9;
   }
 
   #con02 .wrapper > img {
@@ -602,7 +604,7 @@ a {
   header li:hover {
     transform: rotate(-30deg);
   }
-  header i {
+  header .fa-bars {
     display: none;
   }
 
@@ -893,10 +895,12 @@ a {
   #con02 .swiper-button-next {
     color: #6a6760;
     transform: translateY(50px);
+    z-index: 9;
   }
   #con02 .swiper-button-prev {
     color: #6a6760;
     transform: translateY(50px);
+    z-index: 9;
   }
 
   #con02 .wrapper > img {
@@ -922,10 +926,6 @@ a {
   #con03 {
     width: 90%;
     margin: 150px auto;
-    background-image: url(../img/deco_3.png);
-    background-repeat: no-repeat;
-    background-position: right bottom;
-    background-size: 20%;
     position: relative;
   }
 
@@ -1072,7 +1072,7 @@ a {
   #con04 .more {
     position: absolute;
     top: 120px;
-    right: 200px;
+    right: 100px;
   }
   #con04 .more::after {
     content: "";
@@ -1158,9 +1158,10 @@ a {
   header ul {
     display: none;
   }
-  header i {
+  header .fa-bars {
     font-size: 30px;
     cursor: pointer;
+    color: #6a6760;
   }
 
   /*visual*/
@@ -1362,10 +1363,10 @@ a {
   #con01 {
     display: flex;
     flex-direction: column;
-    gap: 100px;
+    gap: 50px;
     width: 90%;
     margin: 0px auto;
-    padding: 150px 0;
+    padding: 100px 0;
     align-items: center;
     color: #6a6760;
     background: url(../img/bg_1.png) no-repeat center;
@@ -1384,23 +1385,23 @@ a {
     width: 90%;
     display: flex;
     flex-direction: column;
-    gap: 5vh;
+    gap: 3vh;
     align-items: center;
   }
   #con01 .right img {
-    width: 37vw;
+    width: 70vw;
     object-fit: cover;
   }
   #con01 p:nth-of-type(1) {
     font-family: "Noto Serif KR", serif;
-    line-height: 40px;
-    font-size: 18px;
+    line-height: 3.5vh;
+    font-size: 1rem;
     font-style: italic;
     text-align: center;
   }
   #con01 p:nth-of-type(2) {
     width: 60vw;
-    line-height: 35px;
+    line-height: 3.5vh;
   }
 
   /*con02*/
@@ -1421,16 +1422,15 @@ a {
     width: 95%;
     margin: 0 auto;
     position: relative;
-    min-height: 100vh;
   }
   #con02 .swiper {
     width: 80%;
     height: 100%;
   }
-  /* #con02 .wrapper .swiper-wrapper {
+  #con02 .wrapper .swiper-wrapper {
     display: flex;
     gap: 0px;
-  } */
+  }
   #con02 .wrapper .swiper-slide {
     width: 100%;
     text-align: left;
@@ -1470,14 +1470,15 @@ a {
   }
 
   #con02 .swiper-button-next {
+    width: 20px;
     color: #6a6760;
   }
   #con02 .swiper-button-prev {
+    width: 20px;
     color: #6a6760;
   }
 
   #con02 .wrapper > img {
-    display: none;
     position: absolute;
     width: 20vw;
     bottom: -60px;
@@ -1493,12 +1494,7 @@ a {
   #con03 {
     width: 90%;
     margin: 150px auto;
-    /* background-image: url(../img/deco_3.png);
-    background-repeat: no-repeat;
-    background-position: right bottom;
-    background-size: 20%; */
     position: relative;
-    height: 100vh;
   }
   #con03 .title {
     width: 55vw;
@@ -1511,8 +1507,8 @@ a {
   #con03 > img {
     width: 20vw;
     position: absolute;
-    bottom: -15vh;
-    left: 5vw;
+    bottom: -6vh;
+    left: 0;
   }
 
   #con03 .wrap {
@@ -1525,7 +1521,8 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 95vw;
+    width: 85vw;
+    margin: 0 auto;
     position: relative;
     transform: translateY(3vh);
   }
@@ -1549,9 +1546,9 @@ a {
   }
   #con03 .deco {
     position: absolute;
-    width: 100px;
-    right: -30px;
-    top: -50px;
+    width: 50px;
+    right: -10px;
+    top: -20px;
     z-index: 9;
     filter: grayscale(0) !important;
     pointer-events: none;
@@ -1571,7 +1568,7 @@ a {
     width: 100%;
     position: relative;
     color: #333;
-    height: 430px;
+    height: 280px;
   }
   #con04 img {
     width: 100%;
@@ -1587,19 +1584,20 @@ a {
   #con04 h4 {
     position: absolute;
     top: 30px;
-    left: 50px;
+    left: 25px;
     font-family: "Noto Serif KR", serif;
     font-size: 3rem;
   }
   #con04 .more {
     position: absolute;
-    top: 50px;
-    right: 50px;
+    top: 60px;
+    right: 25px;
+    font-size: 0.8rem;
   }
   #con04 .more::after {
     content: "";
     width: 100%;
-    height: 2px;
+    height: 1px;
     background-color: #333;
     position: absolute;
     bottom: -4px;
@@ -1616,17 +1614,17 @@ a {
     position: absolute;
   }
   #con04 li:nth-of-type(1) {
-    bottom: 140px;
+    bottom: 110px;
     left: 0;
     z-index: 1;
   }
   #con04 li:nth-of-type(2) {
-    bottom: 70px;
+    bottom: 40px;
     left: 0;
     z-index: 2;
   }
   #con04 li:nth-of-type(3) {
-    bottom: 0px;
+    bottom: -30px;
     left: 0;
     z-index: 3;
   }

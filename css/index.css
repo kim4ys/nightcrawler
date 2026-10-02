@@ -62,9 +62,6 @@ a {
   header .fa-bars {
     display: none;
   }
-  header .logo-mb {
-    display: none;
-  }
 
   /*visual*/
   #visual {
@@ -608,9 +605,6 @@ a {
     transform: rotate(-30deg);
   }
   header .fa-bars {
-    display: none;
-  }
-  header .logo-mb {
     display: none;
   }
 
@@ -1166,13 +1160,6 @@ a {
     cursor: pointer;
     color: #6a6760;
   }
-  header .logo-mb {
-    width: 20px;
-    display: none;
-  }
-  header .logo-mb img {
-    width: 100%;
-  }
 
   /*visual*/
   #visual {
@@ -1410,7 +1397,7 @@ a {
     text-align: center;
   }
   #con01 p:nth-of-type(2) {
-    width: 60vw;
+    width: 75vw;
     line-height: 3.5vh;
   }
 
@@ -1503,7 +1490,7 @@ a {
   /*con03*/
   #con03 {
     width: 90%;
-    margin: 150px auto;
+    margin: 100px auto 150px;
     position: relative;
   }
   #con03 .title {
